@@ -32,14 +32,6 @@
       "completed": false,
       "author": 1,
       "id": 3
-    },
-    {
-      "title": "Membuat Single Page App",
-      "description": "Dibuat pada hari itu juga, harus selesai!",
-      "date": "28 Feb 2019",
-      "completed": false,
-      "author": 3,
-      "id": 4
     }
   ]
 }

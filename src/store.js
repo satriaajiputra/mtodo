@@ -24,7 +24,6 @@ export default new Vuex.Store({
         }
         return row
       })
-      state.todos.push(todo)
     },
     UNSET_TODO(state, id) {
       state.todos = state.todos.filter(row => parseInt(row.id) != parseInt(id))
