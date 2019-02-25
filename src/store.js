@@ -59,6 +59,7 @@ export default new Vuex.Store({
     },
     logout({ commit }) {
       commit('CLEAR_USER')
+      commit('SET_TODOS', [])
       return true
     }
   }

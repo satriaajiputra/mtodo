@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <NavBar />
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -76,5 +78,20 @@ body {
   max-width: 600px;
   width: 100%;
   margin: 15px auto;
+}
+.fade-enter-active {
+  animation: fade-in 0.2s;
+}
+.fade-leave-active {
+  animation: fade-in 0.2s reverse;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

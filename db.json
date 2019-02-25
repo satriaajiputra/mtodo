@@ -14,24 +14,12 @@
       "username": "edun",
       "name": "Mas Edun",
       "id": 3
-    }
-  ],
-  "todos": [
-    {
-      "title": "Cara membuat sesuatu menjadi mungkin",
-      "description": "awfawfawf",
-      "date": "15 Feb 2019",
-      "completed": false,
-      "author": 1,
-      "id": 1
     },
     {
-      "title": "InterCMS - SSH and OpenVPN Creator CMS",
-      "description": "Ini apa ya?",
-      "date": "1 Mar 2019",
-      "completed": false,
-      "author": 1,
-      "id": 3
+      "username": "admin",
+      "name": "Satria Aji Putra",
+      "id": 4
     }
-  ]
+  ],
+  "todos": []
 }
