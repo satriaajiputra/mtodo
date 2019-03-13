@@ -41,4 +41,4 @@ yarn run build
 yarn run lint
 ```
 
-Copyright &copy; 2019. [Satmaxt Developer](https://satmaxt.xyz). Coded with :heart: & :coffee: at Bandung
+Copyright &copy; 2019. Coded with :heart: & :coffee: at Bandung
