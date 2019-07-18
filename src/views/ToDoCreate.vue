@@ -68,7 +68,7 @@ export default {
     },
     saveToDo() {
       if (!this.todo.title) {
-        alert('Title tidak boleh kosong!')
+        alert('Title is required!')
         return true
       }
       this.todo.date = this.getDate(this.todo.date)

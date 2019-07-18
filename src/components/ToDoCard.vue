@@ -78,14 +78,14 @@ export default {
     .control {
       position: relative;
       text-align: center;
-      width: 100px;
-      margin-right: -100%;
+      width: 0px;
+      overflow: hidden;
       transition: all 0.1s ease-in-out;
       background-color: #1978e4;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 15px 10px;
+      padding: 15px 0px;
       margin-left: 20px;
       a {
         color: #fff;
@@ -108,10 +108,9 @@ export default {
     border-color: #ccc;
   }
   &:hover .control {
-    margin-right: 0;
-  }
-  &:hover .title {
-    margin-left: -100px;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   h3.title {
     margin: 0 0 10px 0;

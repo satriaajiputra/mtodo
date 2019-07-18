@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     login() {
-      if (!this.user.username) return alert('Username tidak boleh kosong!')
+      if (!this.user.username) return alert('Username is required!')
 
       request
         .getUser(this.user.username)
@@ -33,7 +33,7 @@ export default {
             this.$store.dispatch('fetchUser', auth[0])
             this.$router.push({ path: '/' })
           } else {
-            alert('User tidak ditemukan!')
+            alert('User does not exists!')
           }
         })
         .catch(error => {

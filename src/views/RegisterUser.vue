@@ -21,11 +21,11 @@ export default {
   methods: {
     register() {
       if (!this.user.username || !this.user.name)
-        return alert('Username dan Name tidak boleh kosong!')
+        return alert('Username and Name must filled!')
 
       request.getUser(this.user.username).then(resp => {
         if (resp.data.length > 0) {
-          alert('Username sudah digunakan!')
+          alert('Username  used by another account!')
           this.user = this.resetUser()
         } else {
           this.saveUser()
@@ -42,7 +42,7 @@ export default {
           this.$router.push({ path: '/' })
         })
         .catch(error => {
-          console.log('Error: ', error.message)
+          console.error('Error: ' + error.message)
         })
     },
     resetUser() {
